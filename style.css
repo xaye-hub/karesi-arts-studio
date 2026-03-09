@@ -71,6 +71,12 @@ li a:hover {
   border-radius: 10px;
 }
 
+.gallery img:hover{
+  transform: scale(1.1);
+  transition: ease(0.3s);
+}
+
+
 .caption {
   margin-top: 8px;
   font-weight: bold;
