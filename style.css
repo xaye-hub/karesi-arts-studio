@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
+}
+
+h2{
+  text-align:center;
+}
+
+.header {
+  text-align: center;
+  padding: 1px;
+  background-color: green; /*#0a0a23;*/
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+  position :sticky;
+  top:0;
+  width: 99%;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-height: 35vh;       /* Default max height */
+  overflow-y: auto; 
+}
+
+li{
+  list-style-type: none; 
+}
+
+li a {
+  display: block;
+  color: #fdb347;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+li a:hover {
+  background-color: #555555;
+  color: white; 
+}
+
+#intro{
+  overflow-wrap: break-word;
+  white-space: normal; 
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.caption {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-card {    
+    display: inline-block;
+    max-width: 100%;              /* Prevent overflow beyond container */
+    white-space: nowrap;
+    padding:20px;   
+}
+
+.contact-card h2 {
+    margin-top: 0;
+    color: #333;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color:black; 
+}
+
+address {
+    font-style: normal; /* Override default italic style*/
+    line-height: 1.8;
+}
+
+address a {
+    color: lime;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    margin-right: 6px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-color:grey;
+}
+
+@media (max-width: 1024px) {
+    header {
+        max-height: 120px;   /* Slightly smaller max height */
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+    header {
+        max-height: 90px;    /* Even smaller for mobile */
+        padding: 8px;        /* Reduce padding for space */
+    }
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    gap: 10px;
+    max-width: 280px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Email Style */
+.contact.email {
+    background-color: #0073e6; /* Blue */
+}
+
+.contact.email:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* WhatsApp Style */
+.contact.whatsapp {
+    background-color: #25D366; /* WhatsApp green */
+}
+
+.contact.whatsapp:hover {
+    background-color: #1da851;
+    transform: scale(1.05);
+}
+
+/* Phone Style */
+.contact.phone {
+    background-color: #ff6600; /* Orange */
+}
+
+.contact.phone:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+/* Icon Styling */
+.contact i {
+    font-size: 1.2em;
+}
+
+.wording{
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.contact.email{
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 400px) {
+    .contact.email {
+        white-space: normal;   /* Allow wrapping on very small screens */
+        word-break: break-word;/* Break long words if needed */
+    }
+}
+
+.contact.whatsapp{
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 400px) {
+    .contact.whatsapp {
+        white-space: normal;   /* Allow wrapping on very small screens */
+        word-break: break-word;/* Break long words if needed */
+    }
+}
+
+.contact.phone{
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 400px) {
+    .contact.phone {
+        white-space: normal;   /* Allow wrapping on very small screens */
+        word-break: break-word;/* Break long words if needed */
+    }
+}
