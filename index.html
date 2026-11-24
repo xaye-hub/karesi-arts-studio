@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stone Gallery | Natural & Polished Stone Collections</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
 <meta
   name="description"
   content="Explore the best Stone Sculpture Gallery in Zimbabwe with a wide variety of quality stone pieces made from natural stones, polished stone, granite, marble and quartz."
@@ -19,7 +19,7 @@
 <meta property="og:type" content="website" />
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="./style.css">
-
+<script src="https://cdn.tailwindcss.com"></script>
   </head>
     
   <body>
@@ -44,7 +44,10 @@
     <div class="gallery" id="gallery">     
       
       <div class="gallery-item">    
-    <img src="https://image2url.com/r2/default/images/1772443879799-cc9ed565-f869-49e1-b40c-b2629491461e.jpg" alt="Cat 1">
+    <img src="https://image2url.com/r2/default/images/1772443879799-cc9ed565-f869-49e1-b40c-b2629491461e.jpg" alt="Cat 1"
+      loading="lazy"
+    onload="this.classList.remove('opacity-0')"
+    class="h-full w-full object-cover opacity-0 transition-opacity duration-500 ease-in-out">
     <p class="caption">P0001</p>
   </div>
       
