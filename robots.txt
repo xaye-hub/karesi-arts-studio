@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xaye-hub.github.io/karesi-arts-studio/sitemap.xml
